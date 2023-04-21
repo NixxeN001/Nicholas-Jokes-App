@@ -2,7 +2,7 @@
 {
     public class JokesContain
     {
-        public int JokeID { get; set; }
+        public int ID { get; set; }
 
         public string JokeAnswer { get; set; }
 
@@ -10,8 +10,7 @@
 
         public JokesContain()
         {
-            JokeQuestion = string.Empty;
-            JokeAnswer = string.Empty;
+       
         }
 
     }
