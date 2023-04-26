@@ -25,3 +25,11 @@ body {
 .navbar-brand {
     font-weight: bold;
 }
+
+.footer {
+    position: fixed;
+    left: auto;
+    bottom: 0;
+    width: fit-content;
+    text-align: center;
+}
