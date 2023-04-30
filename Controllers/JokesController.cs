@@ -27,11 +27,9 @@ namespace Nicholas_Jokes_App.Controllers
                           Problem("Entity set 'ApplicationDbContext.JokesContain'  is null.");
         }
 
-        public async Task<IActionResult> SearchForm()
+        public Task<IActionResult> SearchForm()
         {
-            return _context.JokesContain != null ?
-                        View(await _context.JokesContain.ToListAsync()) :
-                        Problem("Entity set 'ApplicationDbContext.JokesContain'  is null.");
+            return Task.FromResult<IActionResult>(View());
         }
 
         public async Task<IActionResult> SearchResults()
